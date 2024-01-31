@@ -11,4 +11,4 @@ CREATE TABLE users(
 
 --insert fake users
 
-INSERT INTO users (user_name, user_mail, user_password) VALUES ('ray', 'ray@node.js', '12345678');
+INSERT INTO users (user_name, user_mail, user_password) VALUES ('rrrr', 'rgg@node.js', '12345678');
