@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const cors = require("cors")
+const cors = require("cors");
 
 //middleware
 app.use(express.json()) //req.body
@@ -10,7 +10,11 @@ app.use(cors())
 
 
 //reqister and login routes
-app.use("/auth", require("./routes/jwtAuth"))
+app.use("/auth", require("./routes/jwtAuth"));
+
+//dashboard route
+
+app.use("/dashboard", require("./routes/dashboard"));
 
 
 app.listen(3003, () => {
